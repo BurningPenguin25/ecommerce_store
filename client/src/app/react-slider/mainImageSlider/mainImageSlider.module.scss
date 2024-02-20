@@ -1,0 +1,30 @@
+.mainImageSlider{
+  margin-top: 40px;
+  background: #D4D4D4;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &_imageContainer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    &_imageTwo{
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+      background: rgb(255, 255, 255);
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      border: 1px dashed black;
+
+    }
+
+    img{
+      display: block;
+      width: 100%;
+    }
+
+  }
+}

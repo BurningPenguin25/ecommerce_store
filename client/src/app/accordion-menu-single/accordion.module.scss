@@ -1,0 +1,42 @@
+.accordionMenu{
+  width: 100%;
+
+  &_head{
+color: red;
+    background-color: gray;
+  }
+
+  &_list{
+background-color: lightpink;
+
+
+    .categ{
+      color: greenyellow;
+    }
+
+    .product{
+      color: orangered;
+    }
+
+
+    .collapseContainer{
+      height: 0;
+      overflow: hidden;
+      transition: height 1s;
+    }
+
+
+    //.collapseOpen{
+    //  height: auto;
+    //}
+
+
+
+
+
+
+  }
+
+
+
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "promoswiper": [
+      {
+        "id": 1,
+        "name": "Iphone 15 PRO MAX",
+        "description": "Провессиональный. ЗА гранью",
+        "images": [
+          {
+            "url": "/16-9_1500х845.jpg"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Iphone 15 PRO MAX",
+        "description": "Провессиональный. ЗА гранью",
+        "images": [
+          {
+            "url": "/16-9_1500х845.jpg"
+          }
+        ]
+      }
+    ],
+    "bottompromo": [
+          {
+            "id": 1,
+            "name": "Apple Watch ULTRA 2",
+            "description": "Часы с абсолютно новым дизайном",
+            "images": [
+              {
+                "url": "/4-3_500х375.jpg"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Apple Watch ULTRA 2",
+            "description": "Часы с абсолютно новым дизайном",
+            "images": [
+              {
+                "url": "/4-3_500х375.jpg"
+              }
+            ]
+          }
+    ]
+  }
+
+]

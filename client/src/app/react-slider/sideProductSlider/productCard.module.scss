@@ -1,0 +1,96 @@
+@import "../../variables";
+.link {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    padding: 20px;
+
+    &_image {
+      width: 70px;
+      height: 90px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &_content {
+      width: 138px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+
+      h2 {
+        color: $text-page-black;
+        font-family: $font-family-page;
+        font-size: 11.25px;
+        font-weight: 400;
+        line-height: 15px;
+        text-align: left;
+
+
+        position: absolute;
+        height: 28px;
+        background: white;
+        z-index: 10;
+        overflow: hidden;
+      }
+
+      &_costInfo {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 45px;
+        width: 138px;
+        z-index: 9;
+        background: white;
+        height: 45px;
+
+        &_price {
+          h4 {
+            color: $text-page-grey;
+            font-family: $font-family-page;
+            font-size: 9.28px;
+            font-weight: 400;
+            line-height: 16.5px;
+
+            text-align: left;
+            text-decoration-line: line-through;
+          }
+
+          h2 {
+            color: $text-page-black;
+            font-family: $font-family-page;
+            font-size: 13.13px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: left;
+            height: unset;
+            background-color: unset;
+          }
+        }
+
+        span {
+          z-index: 11;
+          align-self: end;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          border: 1px solid rgb(235, 235, 235);
+          border-radius: 13.5px;
+          width: 25px;
+          height: 25px;
+
+          svg {
+            color: $color-icon;
+            font-size: 10px;
+          }
+        }
+
+      }
+    }
+
+}

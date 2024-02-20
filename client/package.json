@@ -7,19 +7,26 @@
     "build": "next build",
     "start": "next start",
     "eslint": "next lint",
-    "lint": "stylelint \"**/*.{css, scss}\""
+    "lint": "stylelint \"**/*.{css, scss}\"",
+    "nodemon": "nodemon"
   },
   "dependencies": {
+    "@types/react-slick": "^0.23.13",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-icons": "^5.0.1",
+    "react-slick": "^0.29.0",
+    "react-slider": "^2.0.6",
+    "slick-carousel": "^1.8.1",
     "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.0.4",
     "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/react": "^18.2.48",
     "@types/react-dom": "^18",
+    "@types/react-slider": "^1.3.6",
     "@typescript-eslint/eslint-plugin": "^6.18.1",
     "eslint": "^8.56.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -32,6 +39,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-redux": "^4.1.0",
     "eslint-plugin-styled-components-a11y": "^2.1.31",
+    "nodemon": "^3.0.3",
     "sass": "^1.69.7",
     "stylelint": "^15.11.0",
     "stylelint-color-format": "^1.1.0",

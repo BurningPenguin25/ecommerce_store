@@ -1,0 +1,87 @@
+@import "../../variables";
+
+
+
+.sideSale{
+  margin-top: 40px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+
+
+  &_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+
+    h2{
+      color: $text-page-black;
+      font-family: $font-family-page;
+      font-size: 12.7px;
+      font-weight: 700;
+      line-height: 19.5px;
+      letter-spacing: 1px;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    &_buttons{
+      display: flex;
+
+      button{
+        cursor: pointer;
+        height: 20px;
+        width: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 25px;
+        background: rgb(255, 255, 255);
+
+        svg{
+          color:$color-icon;
+        }
+      }
+    }
+  }
+
+
+
+  &_card {
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+    height: 525px;
+
+}
+}
+
+
+
+
+// hover
+
+.sideSale{
+  &_swiper{
+    &_card {
+      &_link {
+        &_content {
+          h2 {
+            &:hover {
+                height: 95px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+

@@ -1,0 +1,366 @@
+@import '../../variables';
+
+
+.productCardFirst{
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  border: 1px dashed black;
+
+
+  max-width: 290px;
+  max-height: 480px;
+
+  margin: 20px 20px;
+
+
+  &_mainInfo{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 505px;
+    gap: 15px;
+
+    &_image{
+      width: 160px;
+      height: 220px;
+      background: black;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &_title{
+      height: 40px;
+      overflow: clip;
+      h2{
+        color: $text-page-black;
+        font-family: $font-family-page;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+      }
+    }
+
+
+    .signs{
+      display: flex;
+      .infoSign{
+        position: absolute;
+        top: 20px;
+        left: 0;
+        //display: flex;
+
+        .newSign{
+          background: rgb(34, 156, 43);
+          padding: 3px 10px;
+          display: flex;
+          align-items: center;
+          p{
+            color: $text-page-white;
+            font-family: $font-family-page;
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 13px;
+            letter-spacing: 2px;
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+
+        .hitSign{
+          background: blue;
+          padding: 3px 10px;
+          display: flex;
+          align-items: center;
+          p{
+            color: $text-page-white;
+            font-family: $font-family-page;
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 13px;
+            letter-spacing: 2px;
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .avaliableSign{
+        display: flex;
+        &_in{
+          background: rgb(241, 241, 241);
+          padding: 0px 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          p{
+            color: rgb(19, 161, 62);
+            font-family: $font-family-page;
+            font-size: 10px;
+            font-weight: 600;
+            line-height: 25px;
+            letter-spacing: 1px;
+            text-align: left;
+            text-transform: uppercase;
+          }
+        }
+        &_out{
+          background: rgb(241, 241, 241);
+          padding: 0px 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          p{
+            color: rgb(101, 101, 101);
+            font-family: $font-family-page;
+            font-size: 10px;
+            font-weight: 600;
+            line-height: 25px;
+            letter-spacing: 1px;
+            text-align: left;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .articul{
+        display: none;
+        p{color: rgb(153, 153, 153);
+          font-family: Inter;
+          font-size: 9.84px;
+          font-weight: 600;
+          line-height: 25px;
+          letter-spacing: 1px;
+          text-align: left;
+          text-transform: uppercase;}
+        span{
+          color: $text-page-black;
+          font-family: $font-family-page;
+          font-size: 10px;
+          font-weight: 600;
+          line-height: 25px;
+          letter-spacing: 1px;
+          text-align: left;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+
+
+    .description{
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      display: none;
+      p{
+        color: $text-page-black;
+        font-family: $font-family-page;
+        font-size: 13.13px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+      }
+    }
+    .parameters{
+      display: none;
+      ul{
+        width: 300px;
+        li{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          p{
+            color: rgb(0, 0, 0);
+            font-family: $font-family-page;
+            font-size: 12.29px;
+            font-weight: 400;
+            line-height: 19px;
+            text-align: left;
+          }
+
+          span{
+            margin-top: 10px;
+            width: 100%;
+            border-bottom: 1px dashed black;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  &_addCart{
+    border-top: 1px solid gray;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .price{
+      gap: 10px;
+      display: flex;
+      flex-direction: column-reverse;
+      &_current{
+        p{
+          color: rgb(0, 0, 0);
+          font-family: $font-family-page;
+          font-size: 13.5px;
+          font-weight: 600;
+          line-height: 24px;
+          text-align: left;
+        }
+        span{
+          color: rgb(124, 124, 124);
+          font-family: $font-family-page;
+          font-size: 10.88px;
+          font-weight: 400;
+          line-height: 18px;
+          text-align: left;
+          text-decoration-line: line-through;
+        }
+      }
+
+      &_signSale{
+        box-sizing: border-box;
+        border: 1px solid rgb(255, 6, 35);
+        background: rgb(255, 255, 255);
+        padding: 1px 10px;
+        height: 19px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 20px;
+        left: 70px;
+        p{
+          color: rgb(255, 6, 35);
+          font-family: $font-family-page;
+          font-size: 9.45px;
+          font-weight: 600;
+          line-height: 20px;
+          letter-spacing: 1px;
+          text-align: left;
+        }
+      }
+    }
+
+
+    .button{
+      display: flex;
+      justify-content: space-around;
+
+      &_quantity{
+        display: none;
+        background: rgb(243, 243, 243);
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 25px;
+        padding: 12px;
+        height: 40px;
+
+        input{
+          background: transparent;
+          border: none;
+          width: 40px;
+          -webkit-appearance: none;
+          -moz-appearance: textfield;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+
+          outline: none;
+        }
+
+        button{
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          color: rgb(149, 149, 149);
+
+          font-family: $font-family-page;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 36px;
+          letter-spacing: 1px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+      }
+      &_toCart{
+        display: flex;
+        background: rgb(255, 197, 1);
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 25px;
+        padding: 5px;
+        width: 95px;
+
+        p{
+          color: $text-page-black;
+          font-family: $font-family-page;
+          font-size: 11px;
+          font-weight: 400;
+          line-height: 32px;
+          letter-spacing: 1px;
+          text-align: left;
+          text-transform: uppercase;
+          margin-left: 5px;
+        }
+
+        svg{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+
+
+  //&_emptyStock{
+  //  padding: 40px;
+  //  border-left: 1px solid grey;
+  //
+  //  p{
+  //    color: rgb(0, 0, 0);
+  //    font-family: $font-family-page;
+  //    font-size: 15.25px;
+  //    font-weight: 600;
+  //    line-height: 24px;
+  //    text-align: left;
+  //  }
+  //
+  //  span{
+  //    margin-top: 20px;
+  //    width: 116px;
+  //    display: flex;
+  //    flex-direction: row;
+  //    justify-content: flex-start;
+  //    align-items: flex-start;
+  //    padding: 0px 10px;
+  //    background: rgb(241, 241, 241);
+  //    color: rgb(101, 101, 101);
+  //    font-family: $font-family-page;
+  //    font-size: 10px;
+  //    font-weight: 600;
+  //    line-height: 25px;
+  //    letter-spacing: 1px;
+  //    text-align: left;
+  //    text-transform: uppercase;
+  //  }
+  //}
+
+
+}
